@@ -1,0 +1,23 @@
+<div class="card mb-4">
+
+  <div class="card-header">
+    <h2>
+      {{prodObj.pname}}
+    </h2>
+  </div>
+
+  <div class="card-body">
+    You have ordered {{prodObj.pname}}
+    and its status is {{prodObj.pstatus}}
+  </div>
+
+  <div class="card-footer">
+    <button mat-raised-button color="primary" (click)="onStatusChange(allProductArray.InProgress)"> In
+      Progress </button>
+    <button mat-raised-button color="accent" class="b mx-2"
+      (click)="onStatusChange(allProductArray.Disptached)"> Disptached </button>
+    <button mat-raised-button color="warn" (click)="onStatusChange(allProductArray.Delivered)"> Delivered
+    </button>
+  </div>
+
+</div>
